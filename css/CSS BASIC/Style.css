@@ -1,0 +1,78 @@
+/* basic selctor */
+body {
+  background-color: yellow;
+}
+
+P {
+  color: red;
+}
+
+#fifth {
+  color: blue;
+}
+
+.pg {
+  color: #ce0617;
+  font-size: 30px;
+}
+
+section {
+  background-color: white;
+}
+
+/*child (>) */
+
+section > p {
+  color: blue;
+  font-size: 50px;
+}
+/*   Adjacent (+) element*/
+section + div {
+  color: cyan;
+  font-size: 20px;
+}
+
+/* sibling (~) */
+
+section ~ div {
+  color: cyan;
+}
+/*Attribute selector*/
+/* [Attribute name]*/
+[href] {
+  text-decoration: none;
+  font-size: 50px;
+}
+/* [Attribute name="value"]*/
+[href="contact.html"] {
+  background: blueviolet;
+  color: wheat;
+  border-radius: 50%;
+}
+
+/* element [Attribute name]*/
+a[href="contact.html"] {
+  text-decoration: line-through;
+}
+
+/* Pseudo Elements selector */
+
+p::first-letter {
+  font-size: 32px;
+  font-weight: bolder;
+}
+
+p::first-line {
+  color: cyan;
+}
+
+/* Pseudo class selector */
+a:hover {
+  font-size: 100px;
+  color: red;
+}
+
+p:nth-child(odd) {
+  color: red;
+  font-size: 50px;
+}
